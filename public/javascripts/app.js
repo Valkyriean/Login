@@ -4,7 +4,7 @@ var inite=function(){
   $("#bot" ).click(function() {
     alert( "Yes you did it" );
       $(".bot").css("background-color","D5FFFD");
-      $(".block1").css("color","red");
+      $(".load").css("color","red");
     // $("body").css("background-color","red");
   });
 }
