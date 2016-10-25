@@ -13,43 +13,21 @@ app.use('/api',api);
 app.use(bodyParser.json());
 
 
-// app.post('/', function (req, res) {
-//
-//
-//     if(username=="alex" && password)
-//     res.send();
-// })
+app.post('/', function (req, res) {
+    //debug
+    console.log("got it");
+
+    var username = req.body.username;
+    var password = req.body.password;
+    if (username=="alex" && password=='alex') {
+        //能正确解析 json 格式的post参数
+        res.json({"status": "success"});
+    } else {
+        res.send({"status":"error"});
+    }
+});
 
 
-
-
-// app.post('/', function(req, res) {
-//     ans=req.getJSON('')
-//     console.log(req.body);
-// });
-
-
-// app.get('/', function(req, res) {
-//     res.send()
-//     console.log(req.body);
-// });
-
-
-// app.get('/', function (req, res) {
-//     res.send('go to /api/login please');
-// });
 
 app.listen(3000);
-
-// app.get('/school', function (req, res) {
-//     res.send('RDFZ');
-// });
-//
-// var server = app.listen(3000, function () {
-//     var host = server.address().address;
-//     var port = server.address().port;
-//
-//     console.log('Example app listening at http://%s:%s', host, port);
-// });
-
 
