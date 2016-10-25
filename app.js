@@ -13,12 +13,12 @@ app.use('/api',api);
 app.use(bodyParser.json());
 
 
-app.post('/', function (req, res) {
-
-
-    if(username=="alex" && password)
-    res.send();
-})
+// app.post('/', function (req, res) {
+//
+//
+//     if(username=="alex" && password)
+//     res.send();
+// })
 
 
 
