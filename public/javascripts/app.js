@@ -1,6 +1,17 @@
 
 var inite=function(){
   console.log("Hellow world");
+
+ /*$( "#myform" ).validate({
+    rules: {
+      password: "required",
+      password_again: {
+        equalTo: "#password"
+      }
+    }
+  });*/
+
+
   $("#bot" ).click(function() {
     alert( "Yes you did it" );
       $(".bot").css("background-color","D5FFFD");
