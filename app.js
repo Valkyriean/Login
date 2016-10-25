@@ -12,10 +12,3 @@ app.listen(3000);
 app.use(express.static('public'));
 app.use(bodyParser.json());
 app.use('/api',api);
-
-
-
-
-
-
-
