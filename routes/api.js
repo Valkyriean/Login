@@ -4,8 +4,6 @@
 var express = require('express');
 var router = express.Router();
 
-
-
 router.post('/login', function (req, res) {
     //debug
     console.log("got it");
@@ -22,7 +20,7 @@ router.post('/login', function (req, res) {
         console.log(username);
         console.log(password);
         res.send({"status":"error"});
-        console.log("nope");
+        console.log("error");
     }
 });
 
