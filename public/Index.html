@@ -1,21 +1,27 @@
-<!--Originally made by William-->
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <script src = javascripts/jquery.js> </script>
-    <script src = javascripts/Script.js> </script>
+<html>
 
-    <meta content="application/json; charset=utf-8">
-    <link href="stylesheets/login.css" rel="stylesheet" type="text/css"/>
-    <style type="text/css"></style>
+<head>
+
+  <script src="javascripts/jquery.js"> </script>
+  <script src="javascripts/app.js"></script>
+  <link href="stylesheets/login.css" rel="stylesheet" type="text/css"/>
+  <style type="text/css"></style>
+
 </head>
-<body id = "Outside">
-    <div id = "Inside">
-        <form id = "Form">
-            <input id = "EnterText", placeholder="Please enter your e-mail", type = text><br/>
-            <input id = "EnterPassword", placeholder = "Password", type = password><br/>
-            <button id = "Button", type = submit> login </button>
-        </form>
+
+<body bgcolor="teal">
+
+<div class="block"></div>
+    <div class="around">
+        <div class="block1"></div>
+        <div class="incorrect">The username or password is not correct</div>
+        <div><input id="EnterText" type="text" required name='user_name' placeholder="Enter your email"></div>
+        <div><input id="EnterPassword" type="password" required name='pass' placeholder="Password"></div>
+        <button class="bot" id=Button>Login</button>
+        <div class="lyp">Lost your password</div>
+        <h1 class="load">Loading...</h1>
     </div>
+
 </body>
+
 </html>
