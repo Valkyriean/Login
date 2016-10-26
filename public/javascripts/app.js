@@ -1,9 +1,5 @@
 var url = "http://localhost:3000/api/login";
 
-function test() {
-  alert("Hello!")
-}
-
 var init = function() {
   $("#Button").click(function(e) {
     e.preventDefault();
