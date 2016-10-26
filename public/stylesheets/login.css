@@ -15,7 +15,16 @@
     border-top-right-radius: 5px;
 }
 
-.box{
+#EnterPassword{
+    color: gray;
+    background: white;
+    width: 300px;
+    height: 25px;
+    margin:10px auto;
+    font-size: 20px;
+}
+
+#EnterText{
     color: gray;
     background: white;
     width: 300px;

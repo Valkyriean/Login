@@ -23,8 +23,8 @@ var init = function() {
             "method": "POST",
             "headers": {
                 "content-type": "application/json",
-                "cache-control": "no-cache",
-                "postman-token": "111a5e94-6cf4-0e6c-915a-84d49505e7f0"
+                //"cache-control": "no-cache",
+                //"postman-token": "111a5e94-6cf4-0e6c-915a-84d49505e7f0"
             },
             "data": "{\"username\":\""+text+"\",\"password\":\""+password+"\"}"
         }
