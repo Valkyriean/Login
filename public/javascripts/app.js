@@ -5,16 +5,13 @@ var init = function() {
         e.preventDefault();
         var text = document.getElementById("EnterText").value;
         var password = document.getElementById("EnterPassword").value;
+        var data = {username:text,password:password};
+        $.post(url,data,function (response) {
+           console.log(response);
+            alert('login '+response.status);
+        },'json');
 
-
-        // $.post(
-        //   url,
-        //     "{\"username\":\""+text+"\",\"password\":\""+password+"\"}",
-        //   function(response){
-        //       alert(text+password);
-        //       alert("Login "+response.status);
-        //   }, "json"
-        // );
+        /* works as well but
         var settings = {
             "url": url,
             "method": "POST",
@@ -28,6 +25,7 @@ var init = function() {
       console.log(response.status);
       alert("Login "+response.status)
     });
+    */
   });
 };
 
