@@ -21,9 +21,9 @@ var init = function() {
         "data": "{\"username\":\""+text+"\",\"password\":\""+password+"\"}"
         }
 
-    $.ajax(settings).done(function (response) {
-      console.log(response.status);
-      alert("Login "+response.status)
+        $.ajax(settings).done(function (response) {
+        console.log(response.status);
+        alert("Login "+response.status)
     });
     */
   });
